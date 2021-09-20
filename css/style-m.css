@@ -1,1 +1,372 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 1080px;
+    margin: 0 auto;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+a:hover{
+    transition: all 0.4s;
+}
 
+/* ヘッダー */
+header{
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+}
+#logo{
+    padding: 15px 20px;
+}
+#logo img{
+    width: 200px;
+    height: 70px;
+}
+#navi{
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+#global-navi{
+    display: flex;
+    margin-bottom: 10px;
+}
+.navi-border_btm{
+    margin-left: 40px;
+}
+.navi-menu{
+    position: relative;
+    z-index: 1;
+}
+.navi-menu::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: #777;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.navi-border_btm:hover .navi-menu:after{
+    width: 100%;
+}
+#navi_drower{
+    display: none;
+}
+#seach-window{
+    position: fixed;
+    width: 280px;
+    margin: 100px 0 0 800px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, .2);
+    z-index: 990;
+}
+#seach_category, #seach_word{
+    margin: 20px;
+}
+#seach_category select{
+    cursor: pointer;
+    text-overflow: ellipsis;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 8px 81px 8px 10px;
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #555;
+}
+#seach_keyword{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    padding: 8px 25px 8px 10px;
+}
+#seach_img{
+    position: relative;
+    top: 7px;
+}
+
+/* TOPイメージ */
+#topImage{
+    position: relative;
+    padding-top: 101px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.topImage_slide_pc{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-repeat: no-repeat;
+/* スライドアニメ */
+    animation-name: slide-anime;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+}
+.topImage_slide_pc:nth-of-type(1){
+    background-image: url(../image/top_frame01.jpg);
+}
+.topImage_slide_pc:nth-of-type(2){
+    animation-delay: 10s;
+    background-image: url(../image/top_frame02.jpg);
+}
+.topImage_slide_pc:nth-of-type(3){
+    animation-delay: 20s;
+    background-image: url(../image/top_frame03.jpg);
+}
+.topImage_slide_pc:nth-of-type(4){
+    animation-delay: 30s;
+    background-image: url(../image/top_frame04.jpg);
+}
+.topImage_slide_pc:nth-of-type(5){
+    animation-delay: 40s;
+    background-image: url(../image/top_frame05.jpg);
+}
+@keyframes slide-anime {
+    0% {
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.4;  
+    }
+    15% {
+        opacity: 0.4;
+    }
+    25%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#topImage_sp{
+    display: none;
+}
+#top_copy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 2px 10px #fff;
+    z-index: 5;
+}
+/* スクロールアニメ */
+#scroll{
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	height: 70px;
+	letter-spacing: 0.1rem;
+    z-index: 5;
+}
+#scroll::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+    left: 50%;
+    margin-top: 20px;
+	width: 1px;
+	height: 30px;
+	background: #777;
+	animation: pathmove 1.4s ease-in-out infinite;
+}
+@keyframes pathmove{
+	0%{
+		height: 0;
+		top: 0;
+		opacity: 0;
+	}
+	30%{
+		height: 30px;
+		opacity: 1;
+	}
+	100%{
+		height: 0;
+		top: 50px;
+		opacity: 0;
+	}
+}
+
+/* 共通 */
+#about, #manga_list, #category_list, #contact{
+    margin-bottom: 60px;
+}
+.title_top::before{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 35px;
+    background-image: url(../image/re.png);
+    background-size: contain;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+.summary{
+    padding: 10px 0;
+}
+.button_more::after{
+    content: "";
+    display: inline-block;
+    width: 74px;
+    height: 76px;
+    background-image: url(../image/btn_more.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+.btn_about{
+    float: right;
+    position: relative;
+    top: -120px;
+    background-color: #fff;
+    opacity: .8;
+    box-shadow: 0 2px 20px #fff;
+}
+.btn_mangalist, .btn_catelist{
+    margin-left: 20px;
+    width: 74px;
+    height: 76px;
+}
+.btn_mangalist{
+    margin-top: 90px;
+}
+.btn_catelist{
+    margin-top: 15px;
+}
+
+/* 漫画一覧, カテゴリ一覧 の横ドラッグスクロール */
+#sum_manga_list, #sum_category_list{
+    display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;
+}
+#sum_manga_list::-webkit-scrollbar, #sum_category_list::-webkit-scrollbar{  /* Chrome, Safari 対応 */
+    display:none;
+}
+.link_manga_list, .link_category_list{
+    width: 25%;
+    margin: 0 20px;
+    text-align: center;
+}
+/* 漫画一覧 */
+.link_manga_list img{
+    width: 270px;
+    height: 170px;
+    object-fit: contain;
+}
+.manga_description_title{
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(to bottom, #fff, #fff 40%, #ddd 70%, #ddd 80%, #fff);
+    margin-bottom: 0;
+}
+.manga_description_title::before{
+    content: "＜ ";
+}
+.manga_description_title::after{
+    content: " ＞";
+}
+.manga_description{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 0;
+}
+.manga_description::after{
+    content: "…";
+    color: #777;
+}
+/* カテゴリ一覧 */
+.link_category_list{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.link_category_list img{
+    width: 270px;
+    height: 102px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    opacity: .2;
+}
+.link_category_list p{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 2px 10px #fff;
+    z-index: 5;
+}
+
+/* お問い合わせ */
+#contact{
+    text-align: center;
+    margin: 120px auto;
+    width: 620px;
+}
+#title_top_contact{
+    width: 620px;
+    height: 120px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    transition: all 1s;
+}
+#title_top_contact:hover{
+    background-color: #999;
+    color: #fff;
+}
+#title_top_contact h2{
+    font-weight: normal;
+    margin: 35px;
+}
+
+/* フッター */
+footer{
+    text-align: center;
+}
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 990;
+    width: 76px;
+    height: 78px;
+    opacity: .9;
+}
+#copyright{
+    padding: 30px;
+    border-top: 1px solid #777;
+    font-size: 0.8rem;
+}
