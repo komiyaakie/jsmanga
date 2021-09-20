@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>レコマンガ｜お薦め漫画を紹介</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style-m.css">
+    <link rel="stylesheet" href="css/style-m_sp.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+ 
+<body>
+
+    <!--　ヘッダー　-->
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="image/logo_recomanga.png"></a>
+        </div>
+        <div id="navi">
+            <div id="navi_pc">
+                <ul id="global-navi">
+                    <a href="index.html" class="navi-border_btm"><li class="navi-menu">TOP</li></a>
+                    <a href="manga_list.html" class="navi-border_btm"><li class="navi-menu">漫画一覧</li></a>
+                    <a href="category_list.html" class="navi-border_btm"><li class="navi-menu">カテゴリ</li></a>
+                    <a href="about.html" class="navi-border_btm"><li class="navi-menu">ABOUT</li></a>
+                    <a href="contact.html" class="navi-border_btm"><li class="navi-menu">お問い合わせ</li></a>
+                </ul>
+            </div>
+            <div id="navi_drower">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <ul id="global-navi_sp">
+                    <li class="navi-menu_sp"><a href="index.html">TOP</a></li>
+                    <li class="navi-menu_sp"><a href="manga_list.html">漫画一覧</a></li>
+                    <li class="navi-menu_sp"><a href="category_list.html">カテゴリ</a></li>
+                    <li class="navi-menu_sp"><a href="about.html">ABOUT</a></li>
+                    <li class="navi-menu_sp"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="navi_close">
+                        <input type="checkbox" id="menu-btn-check">
+                        <label for="menu-btn-check" class="navi_close-btn">閉じる</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="seach-window">
+        <div id="seach_category">
+            <select name="select_cate" onChange="location.href=value;">
+                <option value="#">カテゴリを選ぶ</option>
+                <option value="category_hmn-drama.html">アンダーグラウンド</a></option>
+                <option value="category_hmn-drama.html">異世界</a></option>
+                <option value="category_hmn-drama.html">医療</a></option>
+                <option value="category_hmn-drama.html">学生</a></option>
+                <option value="category_hmn-drama.html">家族</a></option>
+                <option value="category_hmn-drama.html">学校</a></option>
+                <option value="category_hmn-drama.html">近未来・SF</a></option>
+                <option value="category_hmn-drama.html">グルメ</a></option>
+                <option value="category_hmn-drama.html">コメディ</a></option>
+                <option value="category_hmn-drama.html">仕事</a></option>
+                <option value="category_hmn-drama.html">趣味</a></option>
+                <option value="category_hmn-drama.html">セクシャルマイノリティ</a></option>
+                <option value="category_hmn-drama.html">特殊テーマ</a></option>
+                <option value="category_hmn-drama.html">特殊能力</a></option>
+                <option value="category_hmn-drama.html">バトル</a></option>
+                <option value="category_hmn-drama.html">ヒューマンドラマ</a></option>
+                <option value="category_hmn-drama.html">ファンタジー</a></option>
+                <option value="category_hmn-drama.html">ほのぼの</a></option>
+                <option value="category_hmn-drama.html">ミステリー</a></option>
+                <option value="category_hmn-drama.html">歴史</a></option>
+                <option value="category_hmn-drama.html">恋愛</a></option>
+            </select>
+        </div>
+        <form action="#" method="post">
+            <div id="seach_word">
+                <input type="text" name="" placeholder="キーワードを入力" id="seach_keyword">
+                <input type="image" name="" src="image/seach_btn.svg" alt="検索" id="seach_img">
+            </div>
+        </form>
+    </div>
+
+    <!--　メインコンテンツ　-->
+    <main>
+
+        <section id="topImage">
+            <div id="topImage_pc">
+                <div class="topImage_slide_pc"></div>
+                <div class="topImage_slide_pc"></div>
+                <div class="topImage_slide_pc"></div>
+                <div class="topImage_slide_pc"></div>
+                <div class="topImage_slide_pc"></div>
+            </div>
+            <div id="topImage_sp">
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+                <div class="topImage_slide_sp"></div>
+            </div>
+            <h1 id="top_copy">Do you like Japanese Manga？</h1>
+            <div id="scroll">Scroll</div>
+        </section>
+        
+        <section id="about">
+            <h2 class="title_top">このサイトについて</h2>
+            <div class="summary">
+                <p>このサイトでは、管理人がお薦めしたい漫画を勝手にお薦めしていきます。ジャンルの縛りはありません。　漫画は、　★ビジュアルメインの媒体なのでわかりやすい　★作者の意図したストーリーイメージが読者に伝わりやすい　★静止画なので戻れる（見返せる）　★イラストなのでリアルすぎない　★好きな時に好きなだけ読める　…などという魅力があります。</p>
+            </div>
+            <a href="about.html"><div class="button_more btn_about"></div></a>
+        </section>
+
+        <section id="manga_list">
+            <h2 class="title_top">漫画一覧</h2>
+            <div class="summary">
+                <div id="sum_manga_list">
+                    <a class="link_manga_list" href="001.html">
+                        <img src="image/051 (1).jpeg" alt="猫と竜 表紙">
+                        <p class="manga_description_title">猫と竜</p>
+                        <p class="manga_description">なろう系にありがちなオレスゲエを感じないのに、力を入れなくても読める</p>
+                    </a>
+                    <a class="link_manga_list" href="001.html">
+                        <img src="image/050 (1).jpeg" alt="わたしは壁になりたい 表紙">
+                        <p class="manga_description_title">わたしは壁になりたい</p>
+                        <p class="manga_description">タイトルはゆり子（妻）の気持ちに沿ったものだと思います笑</p>
+                    </a>
+                    <a class="link_manga_list" href="001.html">
+                        <img src="image/049 (1).jpeg" alt="チ。-地球の運動について- 表紙">
+                        <p class="manga_description_title">チ。-地球の運動について-</p>
+                        <p class="manga_description">世界チョレ〜！からの、1巻終盤。変化がすごい…ってか、12歳の少年の考え</p>
+                    </a>
+                    <a class="link_manga_list" href="001.html">
+                        <img src="image/048 (1).jpeg" alt="セルフ 表紙">
+                        <p class="manga_description_title">セルフ</p>
+                        <p class="manga_description">1巻だけ買って読んでなかったことに最近気づいたので、慌てて読みました</p>
+                    </a>
+                    <a class="link_manga_list" href="001.html">
+                        <img src="image/047 (1).jpeg" alt="葬送のフリーレン 表紙">
+                        <p class="manga_description_title">葬送のフリーレン</p>
+                        <p class="manga_description">ちょいちょいTLで流れてたので読んでみました。エルフってやっぱ長生きなの</p>
+                    </a>
+                    <a class="btn_mangalist" href="manga_list.html"><div class="button_more"></div></a>
+                </div>                
+            </div>
+        </section>
+
+        <section id="category_list">
+            <h2 class="title_top">カテゴリ一覧</h2>
+            <div class="summary">
+                <div id="sum_category_list">
+                    <a class="link_category_list" href="category_hmn-drama.html">
+                        <img src="image/025 (1).jpeg" alt="">
+                        <p>アンダーグラウンド</p>
+                    </a>
+                    <a class="link_category_list" href="category_hmn-drama.html">
+                        <img src="image/033 (1).jpeg" alt="">
+                        <p>異世界</p>
+                    </a>
+                    <a class="link_category_list" href="category_hmn-drama.html">
+                        <img src="image/032 (1).jpeg" alt="">
+                        <p>医療</p>
+                    </a>
+                    <a class="link_category_list" href="category_hmn-drama.html">
+                        <img src="image/002 (1).jpeg" alt="">
+                        <p>学生</p>
+                    </a>
+                    <a class="link_category_list" href="category_hmn-drama.html">
+                        <img src="image/024 (1).jpeg" alt="">
+                        <p>家族</p>
+                    </a>
+                <a class="btn_catelist" href="category_list.html"><div class="button_more"></div></a>
+                </div>                
+            </div>
+        </section>
+
+        <section id="contact">
+            <a href="contact.html">
+                <div id="title_top_contact"><h2>お問い合わせ</h2></div>
+            </a>
+        </section>
+
+    </main>
+
+    <!--　フッター　-->
+    <footer>
+        <div id="topBtn"><a href="#topImage"><img src="image/btn_top.svg" alt="ページトップへ戻る"></a></div>
+        <p id="copyright">Copyright (C) recomanga All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/effect.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>レコマンガ｜ヒューマンドラマ</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style-m.css">
+    <link rel="stylesheet" href="css/style-m_page.css">
+    <link rel="stylesheet" href="css/style-m_sp.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+ 
+<body>
+
+    <!--　ヘッダー　-->
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="image/logo_recomanga.png"></a>
+        </div>
+        <div id="navi">
+            <div id="navi_pc">
+                <ul id="global-navi">
+                    <a href="index.html" class="navi-border_btm"><li class="navi-menu">TOP</li></a>
+                    <a href="manga_list.html" class="navi-border_btm"><li class="navi-menu">漫画一覧</li></a>
+                    <a href="category_list.html" class="navi-border_btm"><li class="navi-menu">カテゴリ</li></a>
+                    <a href="about.html" class="navi-border_btm"><li class="navi-menu">ABOUT</li></a>
+                    <a href="contact.html" class="navi-border_btm"><li class="navi-menu">お問い合わせ</li></a>
+                </ul>
+            </div>
+            <div id="navi_drower">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <ul id="global-navi_sp">
+                    <li class="navi-menu_sp"><a href="index.html">TOP</a></li>
+                    <li class="navi-menu_sp"><a href="manga_list.html">漫画一覧</a></li>
+                    <li class="navi-menu_sp"><a href="category_list.html">カテゴリ</a></li>
+                    <li class="navi-menu_sp"><a href="about.html">ABOUT</a></li>
+                    <li class="navi-menu_sp"><a href="contact.html">お問い合わせ</a></li>
+                    <li class="navi_close">
+                        <input type="checkbox" id="menu-btn-check">
+                        <label for="menu-btn-check" class="navi_close-btn">閉じる</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="seach-window">
+        <div id="seach_category">
+            <select name="select_cate" onChange="location.href=value;">
+                <option value="#">カテゴリを選ぶ</option>
+                <option value="category_hmn-drama.html">アンダーグラウンド</a></option>
+                <option value="category_hmn-drama.html">異世界</a></option>
+                <option value="category_hmn-drama.html">医療</a></option>
+                <option value="category_hmn-drama.html">学生</a></option>
+                <option value="category_hmn-drama.html">家族</a></option>
+                <option value="category_hmn-drama.html">学校</a></option>
+                <option value="category_hmn-drama.html">近未来・SF</a></option>
+                <option value="category_hmn-drama.html">グルメ</a></option>
+                <option value="category_hmn-drama.html">コメディ</a></option>
+                <option value="category_hmn-drama.html">仕事</a></option>
+                <option value="category_hmn-drama.html">趣味</a></option>
+                <option value="category_hmn-drama.html">セクシャルマイノリティ</a></option>
+                <option value="category_hmn-drama.html">特殊テーマ</a></option>
+                <option value="category_hmn-drama.html">特殊能力</a></option>
+                <option value="category_hmn-drama.html">バトル</a></option>
+                <option value="category_hmn-drama.html">ヒューマンドラマ</a></option>
+                <option value="category_hmn-drama.html">ファンタジー</a></option>
+                <option value="category_hmn-drama.html">ほのぼの</a></option>
+                <option value="category_hmn-drama.html">ミステリー</a></option>
+                <option value="category_hmn-drama.html">歴史</a></option>
+                <option value="category_hmn-drama.html">恋愛</a></option>
+            </select>
+        </div>
+        <form action="#" method="post">
+            <div id="seach_word">
+                <input type="text" name="" placeholder="キーワードを入力" id="seach_keyword">
+                <input type="image" name="" src="image/seach_btn.svg" alt="検索" id="seach_img">
+            </div>
+        </form>
+    </div>
+
+    <!--　メインコンテンツ　-->
+    <main>
+
+        <section id="page_content">
+            <h2 class="title_top title_top_line">カテゴリ</h2>
+
+            <h3 id="page_cate_title">ヒューマンドラマ</h3>
+            <ul id="page_manga_list">
+                <li class="manga_list_cnt">
+                    <img src="image/005 (1).jpeg" alt="">
+                    <p class="manga_description_title">波飛沫せし家政婦さん</p>
+                    <p class="manga_description">男並みの長身で雑な言葉遣いのスーパー家政婦　里、めちゃくちゃカッコイイ</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+                <li class="manga_list_cnt">
+                    <img src="image/007 (1).jpeg" alt="">
+                    <p class="manga_description_title">夏子の酒</p>
+                    <p class="manga_description">酒造の娘・夏子。東京でコピーライターをしていた彼女が実家に戻り、その超人的な才能を活か</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+                <li class="manga_list_cnt">
+                    <img src="image/012 (1).jpeg" alt="">
+                    <p class="manga_description_title">10DANCE</p>
+                    <p class="manga_description">競技ダンス ラテンとスタンダードの強者2人が、10ダンスを踊るためにお互いの分野を教えあ</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+                <li class="manga_list_cnt">
+                    <img src="image/014 (1).jpeg" alt="">
+                    <p class="manga_description_title">ここは今から倫理です。</p>
+                    <p class="manga_description">高校の倫理担当教師・高柳　彼と、さまざまな悩みを持つ生徒たちの触れ合い。</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+                <li class="manga_list_cnt">
+                    <img src="image/015 (1).jpeg" alt="">
+                    <p class="manga_description_title">金田一37歳の事件簿</p>
+                    <p class="manga_description">有名な名探偵の孫・金田一一の謎解きミステリー漫画　少年が終わり、37歳へ。</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+                <li class="manga_list_cnt">
+                    <img src="image/018 (1).jpeg" alt="">
+                    <p class="manga_description_title">王様ランキング</p>
+                    <p class="manga_description">王国それぞれの王様のランキングをつけている世界がある。そのうちの一国・力だけならナンバ</p>
+                    <a class="page_btn_more" href="001.html">もっと見る</a>
+                </li>
+
+            </ul>
+        </section>
+
+    </main>
+
+    <!--　フッター　-->
+    <footer>
+        <div id="topBtn"><a href="#page_content"><img src="image/btn_top.svg" alt="ページトップへ戻る"></a></div>
+        <p id="copyright">Copyright (C) recomanga All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/effect.js"></script>
+
+</body>
+
+</html>
