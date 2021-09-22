@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="76" viewBox="0 0 74 76">
+  <g id="もっと見るの矢印" transform="translate(-987 -945)">
+    <g id="楕円形_2" data-name="楕円形 2" transform="translate(987 945)" fill="none" stroke="#000" stroke-width="1">
+      <ellipse cx="37" cy="38" rx="37" ry="38" stroke="none"/>
+      <ellipse cx="37" cy="38" rx="36.5" ry="37.5" fill="none"/>
+    </g>
+    <line id="線_8" data-name="線 8" x2="25.646" y2="19.052" transform="translate(1014.736 966.098)" fill="none" stroke="#000" stroke-width="2"/>
+    <line id="線_9" data-name="線 9" y1="19.052" x2="25.646" transform="translate(1014.736 984.254)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

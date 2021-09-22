@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.471" height="24.649" viewBox="0 0 26.471 24.649">
+  <g id="グループ_9" data-name="グループ 9" transform="translate(-187.378)">
+    <line id="線_7" data-name="線 7" x2="9.1" y2="7.844" transform="translate(204.422 16.427)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="楕円形_1" data-name="楕円形 1" transform="translate(187.378)" fill="none" stroke="#707070" stroke-width="1">
+      <ellipse cx="10.004" cy="9.5" rx="10.004" ry="9.5" stroke="none"/>
+      <ellipse cx="10.004" cy="9.5" rx="9.504" ry="9" fill="none"/>
+    </g>
+  </g>
+</svg>
