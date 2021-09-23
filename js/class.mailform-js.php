@@ -580,7 +580,7 @@ EOM;
 				.prependTo( $( mailform_dt.eq(i) ) );
 		} else {
 			$( '<span/>' )
-				.text( '　　' )
+				.text( '　' )
 				.addClass( 'optional' )
 				.prependTo( $( mailform_dt.eq(i) ) );
 		}
