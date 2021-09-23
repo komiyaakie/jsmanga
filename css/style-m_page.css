@@ -138,34 +138,37 @@
 }
 
 /* お問い合わせ */
-#page_contact{
+#mail_form{
     margin: 20px 150px 100px;
 }
-#page_contact dl{
+#mail_form dl{
     margin: 0;
     padding: 25px 40px;
     border-bottom: 1px solid #ccc;
     display: flex;
 }
-#page_contact dl:last-of-type{
+#mail_form dl:last-of-type{
     border-bottom: none;
 }
-#page_contact dt{
+#mail_form dt{
     width: 30%;
+    text-align: end;
 }
-#page_contact dd{
+#mail_form dd{
     width: 70%;
+}
+span.repuire::before{
+    content: "* ";
 }
 .input_area{
     width: 90%;
-    height: 100%;
     border: 1px solid #ddd;
     border-radius: 3px;
     background-color: #E9E9E9;
-    padding-left: 10px;
+    padding: 5px 10px;
     color: #555;
 }
-#contact_submit{
+#form_submit_button{
     display: inherit;
     padding: 5px 50px;
     margin: 30px auto;
@@ -177,7 +180,7 @@
     cursor: pointer;
     transform: all .7s;
 }
-#contact_submit:hover{
+#form_submit_button:hover{
     opacity: .8;
 }
 
@@ -219,15 +222,17 @@
         font-size: 0.9rem;
     }
     /* お問い合わせ */
-    #page_contact{
+    #mail_form{
         margin: 20px 5% 100px;
     }
-    #page_contact dl{
+    #mail_form dl{
         display: inherit;
+        padding: 15px 10px;
     }
-    #page_contact dt, #page_contact dd{
+    #mail_form dt, #mail_form dd{
         width: 90%;
         font-size: 0.9rem;
+        text-align: inherit;
     }
     /* カテゴリそれぞれ */
     #page_cate_title{

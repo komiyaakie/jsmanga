@@ -81,12 +81,9 @@ header{
     margin: 20px;
 }
 #seach_category select{
-    cursor: pointer;
     text-overflow: ellipsis;
     outline: none;
-    -webkit-appearance: none;
-    appearance: none;
-    padding: 8px 81px 8px 10px;
+    padding: 8px 60px 8px 10px;
     position: relative;
     border: 1px solid #aaa;
     border-radius: 3px;
