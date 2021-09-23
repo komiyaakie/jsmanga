@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style-m.css">
     <link rel="stylesheet" href="css/style-m_page.css">
     <link rel="stylesheet" href="css/style-m_sp.css">
+    <link rel="stylesheet" href="css/mailform.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
  
@@ -90,14 +91,14 @@
         <section id="page_content">
             <h2 class="title_top title_top_line">お問い合わせ</h2>
 
-            <form action="" method="post" id="page_contact">
+            <form action="php/mailform.php" method="post" id="mail_form">
                 <dl>
-                    <dt><label for="name">氏名</label></dt>
-                    <dd><input type="text" name="yourname" class="input_area"></dd>
+                    <dt><span class="repuire"></span>氏名</span></dt>
+                    <dd class="required"><input type="text" name="yourname" class="input_area" value=""></dd>
                 </dl>
                 <dl>
-                    <dt>メールアドレス</dt>
-                    <dd><input type="email" name="mail" class="input_area"></dd>
+                    <dt><span class="repuire"></span>メールアドレス</dt>
+                    <dd class="required"><input type="email" name="mail" class="input_area" value=""></dd>
                 </dl>
                 <dl>
                     <dt>お問い合わせ種類</dt>
@@ -110,11 +111,14 @@
                     </dd>
                 </dl>
                 <dl>
-                    <dt>お問い合わせ内容</dt>
-                    <dd><textarea name="inquiry" class="input_area" rows="6"></textarea></dd>
+                    <dt><span class="repuire"></span>お問い合わせ内容</dt>
+                    <dd class="required"><textarea name="inquiry" class="input_area" rows="6"></textarea></dd>
                 </dl>
-                <input type="submit" id="contact_submit" value="送信">
+                <p id="form_submit"><input type="button" id="form_submit_button" value="送信する"></p>
             </form>
+
+            <script src="js/mailform-js.php"></script>
+            
         </section>
 
     </main>
